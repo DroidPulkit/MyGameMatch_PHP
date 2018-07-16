@@ -1,0 +1,1 @@
+$("select").imagepicker({show_label: true});

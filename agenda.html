@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8' />
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link href="css/index.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/agenda.css" type="text/css" rel="stylesheet">
+  <link href='css/plugins/fullcalendar/fullcalendar.min.css' rel='stylesheet' />
+  <link href='css/plugins/fullcalendar/fullcalendar.print.min.css' rel='stylesheet' media='print' />
+  <link href='https://bootswatch.com/4/sketchy/bootstrap.min.css' rel="stylesheet" >
+
+  <!--HEADER-->
+  <link href="css/plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="css/plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+  <link rel="stylesheet" type="text/css" href="css/plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+  <link rel="stylesheet" type="text/css" href="css/plugins/OwlCarousel2-2.2.1/animate.css">
+  <link rel="stylesheet" type="text/css" href="css/post_nosidebar.css">
+  <link rel="stylesheet" type="text/css" href="css/post_nosidebar_responsive.css">
+  <link rel="shortcut icon" href="images/favicon2.png" type="image/x-icon">
+  <link rel="icon" href="images/favicon2.png" type="image/x-icon">
+</head>
+<body>
+  <div class="super_container">
+    <!-- Header -->
+  	<header class="header">
+  		<div class="container">
+  			<div class="row">
+  				<div class="col">
+  					<div class="header_content d-flex flex-row align-items-center justify-content-start">
+  						<div class="logo"><a href="#">My Game Match</a></div>
+  						<nav class="main_nav">
+  							<ul>
+  								<li><a href="home.html">Home</a></li>
+  								<li class="active"><a href="#">Agenda</a></li>
+  								<li><a href="events.html" onclick="refreshJSON()">Events</a></li>
+  								<li><a href="index.html">Logout</a></li>
+  							</ul>
+  						</nav>
+  						<div class="hamburger ml-auto menu_mm">
+  							<i class="fa fa-bars trans_200 menu_mm" aria-hidden="true"></i>
+  						</div>
+  					</div>
+  				</div>
+  			</div>
+  		</div>
+  	</header>
+
+    <!-- Menu -->
+  	<div class="menu d-flex flex-column align-items-end justify-content-start text-right menu_mm trans_400">
+  		<div class="menu_close_container"><div class="menu_close"><div></div><div></div></div></div>
+  		<div class="logo menu_mm"><a href="#">My Game Match</a></div>
+  		<nav class="menu_nav">
+  			<ul class="menu_mm">
+  				<li><a href="index.html">Home</a></li>
+  				<li class="active"><a href="#">Agenda</a></li>
+  				<li><a href="events.html"  onclick="refreshJSON()">Events</a></li>
+  				<li><a href="index.html">Logout</a></li>
+  			</ul>
+  		</nav>
+  	</div>
+
+    <!-- Home -->
+  	<div class="home">
+  		<div class="home_background parallax-window" data-parallax="scroll" data-image-src="images/tennis.jpg" data-speed="0.8"></div>
+  		<div class="home_content">
+  			<div class="post_title">My Agenda</div>
+  		</div>
+  	</div>
+
+    <!-- Page Content -->
+    <div class="page_content">
+      <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+      <div id="main">
+        <div id='calendar-agenda'></div>
+      </div>
+      <h4 class="font-weight-bold" style="color: #333333; float: right; padding-right: 310px;">High</h4>
+      <h4 class="font-weight-bold" style="color: green; float: right; padding-right: 300px;">Medium</h4>
+      <h4 class="font-weight-bold" style="color: brown; float: right; padding-right: 300px;">Low</h4>
+    </div>
+  </div>
+
+  <script src='js/lib/moment.min.js'></script>
+  <script src='js/lib/jquery.min.js'></script>
+  <script src='js/lib/fullcalendar.min.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src='js/agenda.js'></script>
+  <script src="js/custom.js"></script>
+  <script src="css/plugins/parallax-js-master/parallax.min.js"></script>
+</body>
+</html>
